@@ -28,11 +28,11 @@ async def on_message(message):
         await message.channel.send("El reciclaje tiene un impacto positivo en la vida de las personas y el medio ambiente, ya que ayuda a reducir la contaminación, conservar recursos naturales y crear comunidades más sostenibles.")
     elif message.content.startswith('$¿Es cierto que reciclar cuesta más que producir nuevos productos?'):
         await message.channel.send("Aunque el reciclaje puede tener un costo inicial, a largo plazo es más económico porque reduce la necesidad de recursos nuevos y ayuda a prevenir problemas ambientales costosos.")
-    elif message.content.startswith("$gen"):
-        await message.channel.send(mina)
-    elif message.content.startswith("$random"):
+    elif message.content.startswith("$Quien eres?"):
+        await message.channel.send(mina(1))
+    elif message.content.startswith("$Que haces?"):
         await message.channel.send(cion(1))
     else:
         await message.channel.send(message.content)
 
-client.run("M")
+client.run("MT8")
